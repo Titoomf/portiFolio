@@ -1,4 +1,5 @@
 ## portiFolio 
+
 Portfolio de desenvolvedor web 
 
 ## Tarefas 
@@ -6,7 +7,7 @@ Portfolio de desenvolvedor web
 O controle das tarefas desse projeto será realizado no GitHub
 ## Icones 
 
-📦nova funcionalidade
-🆙atualização
-🐛correção de bug
-🏁release
+ - 📦nova funcionalidade
+ - 🆙atualização
+ - 🐞correção de bug
+ - 🏁release
