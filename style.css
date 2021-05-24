@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&family=Josefin+Slab:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&family=Josefin+Slab:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
 
-*{
+* {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  text-decoration: none; 
+  text-decoration: none;
 }
 
 /* criacao de variaveis font*/
@@ -17,40 +17,35 @@
 }
 
 .hamburguer {
- 
   width: 2rem;
   height: 2rem;
-  position:fixed;
+  position: fixed;
   /* aqui ele vai fica por cima do capa sendo o primeiro elemento de todos */
   z-index: 100;
-  right:2rem;
-  top: 2rem;  
-  
-  display:flex;
-  flex-direction:column;
-  justify-content:space-evenly;  
-  cursor: pointer;
+  right: 2rem;
+  top: 2rem;
 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  cursor: pointer;
 }
 
 .show-menu .hamburguer {
-  right:16rem;
+  right: 16rem;
 }
 
 .line {
-  width:100%;
-  height: .1rem;
+  width: 100%;
+  height: 0.1rem;
   background-color: #fff;
   box-shadow: 0.1rem 0.1 1px #000;
   transition: transform 1s;
-
 }
 
 .show-menu #line1 {
-  transform: rotate(45deg) translate(.3rem, .45rem);
-
+  transform: rotate(45deg) translate(0.3rem, 0.45rem);
 }
-
 
 .show-menu #line2 {
   opacity: 0;
@@ -58,8 +53,7 @@
 }
 
 .show-menu #line3 {
-  transform: rotate(-45deg) translate(.3rem, -.45rem);;
-
+  transform: rotate(-45deg) translate(0.3rem, -0.45rem);
 }
 
 .hamburguer span {
@@ -67,31 +61,28 @@
   left: 3rem;
   height: 2rem;
   width: 6rem;
-  display:flex;
-  justify-content:center;
-  align-items:center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #a044ff;
   color: #fff;
   font-family: var(--font-action);
   opacity: 0;
-
 }
 
 /* criando um pseudo elemento com ::before */
 .hamburguer span::before {
-  content:"";
+  content: "";
   position: absolute;
-  border-right: .5rem solid #000000;
-  border-top: .5rem solid transparent;
-  border-left: .5rem solid transparent;
-  border-bottom: .5rem solid transparent;
-  left: -.1rem;
-
+  border-right: 0.5rem solid #000000;
+  border-top: 0.5rem solid transparent;
+  border-left: 0.5rem solid transparent;
+  border-bottom: 0.5rem solid transparent;
+  left: -0.1rem;
 }
 
-.show-menu .hamburguer:hover span{ 
+.show-menu .hamburguer:hover span {
   opacity: 1;
-
 }
 
 header {
@@ -99,19 +90,19 @@ header {
   height: 100vh;
   position: relative;
 }
-.img-wrapper{
+.img-wrapper {
   width: 100%;
   height: 100%;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
 /* Reajuste da imagens para que ela ocupar os limite do .img-wrapper*/
-.img-wrapper img{
+.img-wrapper img {
   width: 100%;
   height: 100%;
   overflow: hidden;
   object-fit: cover;
-  animation:zoom 30s;
+  animation: zoom 30s;
 }
 
 @keyframes zoom {
@@ -126,49 +117,49 @@ header {
 
 /* para a posicao da certo precisa estar dentro de uma position relative no caso o header*/
 .banner {
-  position:absolute;
-  top:30%;
+  position: absolute;
+  top: 30%;
   left: 15%;
 }
 
-.banner h1{
+.banner h1 {
   color: #ffffff;
   font-size: 3.5rem;
-  font-family:var(--font-primary);
-  font-weight: 200;  
+  font-family: var(--font-primary);
+  font-weight: 200;
   /* no text shadow pode muda as sombra do texto....*/
-  text-shadow: .3rem .4rem 2px rgba(0,0,0,.4);
+  text-shadow: 0.3rem 0.4rem 2px rgba(0, 0, 0, 0.4);
   line-height: 4rem;
-  margin-bottom:2rem;
-  opacity: 0;
-  animation:moveBanner 1s 0.5s forwards;
-}
-
-.banner p{
-  font-family: var(--font-secondary);
-  color: #fff;
-  font-size:1.5rem;
-  text-shadow: .2rem .2rem rgba(0,0,0,.4);
   margin-bottom: 2rem;
   opacity: 0;
-  animation:moveBanner 1s 0.7s forwards;
+  animation: moveBanner 1s 0.5s forwards;
+}
+
+.banner p {
+  font-family: var(--font-secondary);
+  color: #fff;
+  font-size: 1.5rem;
+  text-shadow: 0.2rem 0.2rem rgba(0, 0, 0, 0.4);
+  margin-bottom: 2rem;
+  opacity: 0;
+  animation: moveBanner 1s 0.7s forwards;
 }
 
 .banner button {
-    font-family: var(--font-action);
-    color: #fff;
-    text-transform: uppercase;
-    /* separar as letrar para que nao fiquem tao juntas umas das outras*/
-    letter-spacing: .1rem;
-    background: #6a3093;  
-    background: -webkit-linear-gradient(to right, #a044ff, #6a3093);  
-    background: linear-gradient(to right, #a044ff, #6a3093); 
-    padding: 1rem 3rem;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    opacity: 0;
-    animation:moveBanner 1s 0.9s forwards;
+  font-family: var(--font-action);
+  color: #fff;
+  text-transform: uppercase;
+  /* separar as letrar para que nao fiquem tao juntas umas das outras*/
+  letter-spacing: 0.1rem;
+  background: #6a3093;
+  background: -webkit-linear-gradient(to right, #a044ff, #6a3093);
+  background: linear-gradient(to right, #a044ff, #6a3093);
+  padding: 1rem 3rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  opacity: 0;
+  animation: moveBanner 1s 0.9s forwards;
 }
 
 /*evento para o botao */
@@ -178,24 +169,23 @@ header {
 }
 /* fazendo animacao no titulo,paragrafo e botao*/
 @keyframes moveBanner {
-    0% {
-      transform:translateY(10rem) rotateY(-30deg);      
-    }
-    100%{
-      transform:translateY(0) rotateY(0);
-      opacity: 1;
-    }
-
+  0% {
+    transform: translateY(10rem) rotateY(-30deg);
+  }
+  100% {
+    transform: translateY(0) rotateY(0);
+    opacity: 1;
+  }
 }
 
- .sidebar {
+.sidebar {
   width: 20rem;
   height: 100vh;
-  background-color:rgba(0,0,0,.4);
-  position:fixed;
-  top:0;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
   right: -20rem;
-  transition:all 1s;
+  transition: all 1s;
 }
 
 .show-menu .sidebar {
@@ -203,44 +193,43 @@ header {
 }
 
 .menu {
-  position:absolute;
-  top:40%;
-  left:50%;
+  position: absolute;
+  top: 40%;
+  left: 50%;
   transform: translate(-50%, -50%);
-
 }
 
 .menu-item {
   text-align: center;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .menu-link {
   font-family: var(--font-action);
   font-size: 2rem;
-  color:#555;
+  color: #555;
   transition: color 1s;
 }
 .menu-link:hover {
   color: #6a3093;
 }
 
-.social-media {  
-  position:absolute;
+.social-media {
+  position: absolute;
   bottom: 2rem;
   width: 100%;
-  display:flex;
-  justify-content:space-evenly;
+  display: flex;
+  justify-content: space-evenly;
 }
 
-.social-media i {  
-  color:#fff;
+.social-media i {
+  color: #fff;
   height: 2.5rem;
   width: 2.5rem;
   font-size: 1.5rem;
-  display:flex;
-  justify-content:center;
-  align-items:center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 50%;
   transition: background-color 1s;
 }
@@ -249,4 +238,112 @@ header {
   background-color: rgb(97, 0, 97);
 }
 
+/* aplicando o formato grid no conhecimento para que ele tenha um visao de coluna e linhas*/
+.conhecimentos {
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(6, 6rem);
+  row-gap: 0.5rem;
+}
 
+.conhecimento:nth-child(1) {
+  grid-column: 4 / 7;
+  grid-row: 1 / 3;
+}
+
+.conhecimento:nth-child(2) {
+  grid-column: 3 / 6;
+  grid-row: 3 / 5;
+}
+
+.conhecimento:nth-child(3) {
+  grid-column: 4 / 7;
+  grid-row: 5 / -1;
+}
+
+.conhecimento:nth-child(4) {
+  grid-column: 11 / 14;
+  grid-row: 1 / 3;
+}
+
+.conhecimento:nth-child(5) {
+  grid-column: 12 / 15;
+  grid-row: 3 / 5;
+}
+
+.conhecimento:nth-child(6) {
+  grid-column: 11 / 14;
+  grid-row: 5 / -1;
+}
+
+.sessao-conhecimentos {
+  background-color: #f5f5f5;
+}
+
+.sessao-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sessao-header h1 {
+  font-family: var(--font-primary);
+  font-size: 3rem;
+  color: #4b4b4b;
+  border-bottom: solid 3px #6a3093;
+  margin-bottom: 1.5rem;
+}
+
+.conhecimento-header {
+  display: flex;
+  align-items: center;
+  color: #4b4b4b;
+}
+
+.conhecimento-header i {
+  font-size: 2.5rem;
+}
+
+.conhecimento-header h3 {
+  font-family: var(--font-secondary);
+  font-size: 2rem;
+  padding-left: 1rem;
+}
+
+.conhecimento-text {
+  font-family: var(--font-secondary);
+  margin-top: 1rem;
+}
+
+.conhecimentos-img-wrapper {
+  grid-column: 7 / 11;
+  grid-row: 2 / 6;
+  width: 100%;
+}
+/* tive que fazer isso pois minha imagem tava passando do wrapper */
+.conhecimentos-img-wrapper img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.projetos {
+  display: flex;
+  justify-content:space-evenly;
+}
+
+.card {
+   width: 20rem;
+   height:30rem;
+}
+
+ .card-img-wrapper img {
+  width: 100%;
+  height: 100%;
+
+   }
+
+.card-img-wrapper img {
+  object-fit: cover;
+  width: 100;
+  height: 100%;
+ }

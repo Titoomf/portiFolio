@@ -22,49 +22,196 @@
       sizes="16x16"
       href="imagens/favicon-16x16.png"
     />
-    <link    
-     rel="manifest"
-     href="/site.webmanifest" />
+    <link rel="manifest" href="/site.webmanifest" />
     <title>Portfólio</title>
   </head>
   <body>
     <div class="container">
-
       <!--Menun hamburguer-->
-        <div class="hamburguer">
-          <div class="line" id="line1"></div>
-          <div class="line" id="line2"></div>
-          <div class="line" id="line3"></div>
-          <span>Fechar</span>
-
-        </div> 
+      <div class="hamburguer">
+        <div class="line" id="line1"></div>
+        <div class="line" id="line2"></div>
+        <div class="line" id="line3"></div>
+        <span>Fechar</span>
+      </div>
 
       <header>
         <div class="img-wrapper">
           <img src="imagens/bg.jpg" alt="" />
         </div>
         <div class="banner">
-        <h1>Web Developer & Front End Designer</h1>
-        <p>Augusto Mendonça Flausino</p>
-        <button>Saiba mais</button>
+          <h1>Web Developer & Front End Designer</h1>
+          <p>Augusto Mendonça Flausino</p>
+          <button>Saiba mais</button>
         </div>
       </header>
-
-        <div class="sidebar">
-          <nav>
-            <ul class="menu">
-              <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
-              <li class="menu-item"><a href="#" class="menu-link">Conhecimento</a></li>
-              <li class="menu-item"><a href="#" class="menu-link">Projetos</a></li>
-              <li class="menu-item"><a href="#" class="menu-link">Contato</a></li>
-              <li class="menu-item"><a href="#" class="menu-link">Orçamento</a></li>
-            </ul>
-          </nav>
-          <div class="social-media">
-            <a href=""><i class="fab fa-github-alt"></i></a>
-            <a href=""><i class="fab fa-instagram"></i></a>
-            <a href=""><i class="fab fa-linkedin"></i></a></div>
+      <!--Menu lateral fica mais semantico -->
+      <aside class="sidebar">
+        <nav>
+          <ul class="menu">
+            <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
+            <li class="menu-item">
+              <a href="#" class="menu-link">Conhecimento</a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="menu-link">Projetos</a>
+            </li>
+            <li class="menu-item"><a href="#" class="menu-link">Contato</a></li>
+            <li class="menu-item">
+              <a href="#" class="menu-link">Orçamento</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="social-media">
+          <a href=""><i class="fab fa-github-alt"></i></a>
+          <a href=""><i class="fab fa-instagram"></i></a>
+          <a href=""><i class="fab fa-linkedin"></i></a>
         </div>
+      </aside>
+
+      <section class="sessao-conhecimentos">
+        <div class="sessao-header">
+          <h1>Conhecimentos</h1>
+        </div>
+        <div class="conhecimentos">
+          <div class="conhecimento">
+            <div class="conhecimento-header">
+              <i class="fab fa-html5"></i>
+              <h3>HTML</h3>
+            </div>
+            <div class="conhecimento-text">
+              <p>
+                HTML abreviação para a expressão inglesa HyperText Markup
+                Language, que significa: "Linguagem de Marcação de Hipertexto" é
+                uma linguagem de marcação utilizada na construção de páginas na
+                Web.
+              </p>
+            </div>
+          </div>
+          <div class="conhecimento">
+            <div class="conhecimento-header">
+              <i class="fab fa-css3-alt"></i>
+              <h3>CSS3</h3>
+            </div>
+            <div class="conhecimento-text">
+              <p>
+                CSS é chamado de linguagem Cascading Style Sheet e é usado para
+                estilizar elementos escritos em uma linguagem de marcação como
+                HTML. O CSS separa o conteúdo da representação visual do site.
+                Pense na decoração da sua página. Utilizando o CSS é possível
+                alterar a cor do texto e do fundo, fonte e espaçamento entre
+                parágrafos.
+              </p>
+            </div>
+          </div>
+          <div class="conhecimento">
+            <div class="conhecimento-header">
+              <i class="fas fa-pencil-alt"></i>
+              <h3>Design</h3>
+            </div>
+            <div class="conhecimento-text">
+              <p>
+                O design [dezaine], desenho industrial, projetismo ou projética
+                é a idealização, criação, desenvolvimento, configuração,
+                concepção, elaboração e especificação de produtos, normalmente
+                produzidos industrialmente ou por meio de sistema de produção em
+                série que demanda padronização dos componentes e desenho
+              </p>
+            </div>
+          </div>
+          <div class="conhecimento">
+            <div class="conhecimento-header">
+              <i class="fab fa-js"></i>
+              <h3>JavaScript</h3>
+            </div>
+            <div class="conhecimento-text">
+              <p>
+                JavaScript é uma linguagem de programação interpretada
+                estruturada, de script em alto nível com tipagem dinâmica fraca
+                e multiparadigma. Juntamente com HTML e CSS, o JavaScript é uma
+                das três principais tecnologias da World Wide We
+              </p>
+            </div>
+          </div>
+          <div class="conhecimento">
+            <div class="conhecimento-header">
+              <i class="fab fa-bootstrap"></i>
+              <h3>Bootstrap</h3>
+            </div>
+            <div class="conhecimento-text">
+              <p>
+                Bootstrap é um framework web com código-fonte aberto para
+                desenvolvimento de componentes de interface e front-end para
+                sites e aplicações web usando HTML, CSS e JavaScript, baseado em
+                modelos de design para a tipografia, melhorando a experiência do
+                usuário em um site amigável e responsivo
+              </p>
+            </div>
+          </div>
+          <div class="conhecimento">
+            <div class="conhecimento-header">
+              <i class="fab fa-github"></i>
+              <h3>Git e GitHub</h3>
+            </div>
+            <div class="conhecimento-text">
+              <p>
+                GitHub é uma plataforma de hospedagem de código-fonte e arquivos
+                com controle de versão usando o Git. Ele permite que
+                programadores, utilitários ou qualquer usuário cadastrado na
+                plataforma contribuam em projetos privados e/ou Open Source de
+                qualquer lugar do mundo
+              </p>
+            </div>
+          </div>
+          <div class="conhecimentos-img-wrapper">
+            <img src="imagens/conhecimentos.png" alt="imagem conhecimento" />
+          </div>
+        </div>
+      </section>
+      
+      <!--sessao de projetos-->
+      <section class="sessao-projetos">
+        <div class="sessao-header">
+          <h1>Projetos</h1>
+        </div>
+
+        <!--Sessao de card-->
+        <div class="projetos">
+          <div class="card">
+            <div class="card-img-wrapper">
+              <img src="/imagens/proj3.jpg" alt="imagem do projeto" />
+            </div>
+            <div class="card-info">
+              <h2>Move.it</h2>
+              <h3></h3>
+              <p></p>
+              <button></button>
+            </div>
+          </div>
+            <div class="card">
+            <div class="card-img-wrapper">
+              <img src="/imagens/fuinha.jpg">
+            </div>
+            <div class="card-info">
+              <h2></h2>
+              <h3></h3>
+              <p></p>
+              <button></button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img-wrapper">
+              <img src="imagens/proj3.jpg">
+            </div>
+            <div class="card-info">
+              <h2></h2>
+              <h3></h3>
+              <p></p>
+              <button></button>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   </body>
   <script src="script.js"></script>
